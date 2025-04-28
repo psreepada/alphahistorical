@@ -1,0 +1,563 @@
+.research-section {
+  padding-top: 6rem;
+}
+
+.research-hero {
+  height: 40vh;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/research-hero.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.research-hero-content {
+  color: var(--white);
+  max-width: 800px;
+  padding: 2rem;
+}
+
+.research-hero h2 {
+  color: var(--white);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.research-hero p {
+  font-size: 1.2rem;
+}
+
+.research-tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--secondary);
+}
+
+/* Archives tab styles */
+.archives-categories {
+  margin: 2rem 0;
+}
+
+.archive-category {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+
+.archive-category i {
+  font-size: 2rem;
+  color: var(--primary);
+  margin-right: 1.5rem;
+  min-width: 40px;
+  text-align: center;
+}
+
+.archive-category h4 {
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.research-hours {
+  background-color: var(--light);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-top: 2rem;
+}
+
+.research-hours h3 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.research-hours .note {
+  font-style: italic;
+  margin-top: 0.8rem;
+  font-size: 0.9rem;
+}
+
+.archives-image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.archives-image-grid img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.archives-image-grid img:hover {
+  transform: scale(1.03);
+}
+
+.archives-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.archive-category.card {
+  background: var(--white);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  padding: 1.5rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.research-hours-card {
+  background: var(--light);
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Genealogy tab styles */
+.resource-list {
+  margin-top: 1.5rem;
+}
+
+.resource-item {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+.resource-item:last-child {
+  border-bottom: none;
+}
+
+.resource-item h4 {
+  color: var(--primary);
+  margin-bottom: 0.8rem;
+}
+
+.genealogy-card {
+  background-color: var(--white);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.genealogy-card h3 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.genealogy-card ul {
+  margin: 1.5rem 0;
+  padding-left: 1.5rem;
+}
+
+.genealogy-card li {
+  margin-bottom: 0.8rem;
+}
+
+.service-cta {
+  background-color: var(--light);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+}
+
+.workshop-info {
+  background-color: var(--white);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  padding: 1.5rem;
+}
+
+.upcoming-workshop {
+  background-color: var(--light);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+}
+
+.workshop-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin: 0.8rem 0;
+}
+
+.workshop-date, .workshop-time, .workshop-location {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.workshop-date i, .workshop-time i, .workshop-location i {
+  margin-right: 0.8rem;
+  color: var(--primary);
+}
+
+/* Interviews tab styles */
+.video-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.video-item {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  gap: 1.5rem;
+  background-color: var(--white);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.video-container {
+  position: relative;
+  height: 100%;
+  min-height: 200px;
+  background-color: #111;
+}
+
+.video-placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('/images/video-thumbnail.jpg');
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+
+.video-placeholder i {
+  font-size: 4rem;
+  color: var(--white);
+  opacity: 0.8;
+  transition: var(--transition);
+}
+
+.video-placeholder:hover i {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.video-info {
+  padding: 1.5rem;
+}
+
+.video-info h3 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.video-date {
+  font-style: italic;
+  color: #666;
+  margin-top: 1rem;
+}
+
+.interview-info {
+  background-color: var(--light);
+  padding: 2rem;
+  border-radius: 8px;
+  margin-top: 3rem;
+}
+
+.participate-info {
+  background-color: var(--white);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+/* Services tab styles */
+.service-box {
+  background-color: var(--white);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.service-box h3 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.fee {
+  font-weight: 600;
+  margin-top: 1rem;
+  color: var(--primary);
+}
+
+.service-info {
+  margin-top: 2rem;
+}
+
+.collections-highlight {
+  margin-bottom: 2rem;
+}
+
+.collection-card {
+  background-color: var(--white);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.collection-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.collection-info {
+  padding: 1.5rem;
+}
+
+.collection-info h4 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.research-testimonials {
+  margin-bottom: 2rem;
+}
+
+.testimonial {
+  background-color: var(--white);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: var(--shadow);
+  position: relative;
+}
+
+.testimonial::before {
+  content: '"';
+  font-size: 4rem;
+  color: var(--secondary);
+  opacity: 0.3;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-family: Georgia, serif;
+}
+
+.quote {
+  font-style: italic;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.author {
+  text-align: right;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.research-guidelines {
+  padding: 1.5rem;
+}
+
+.research-guidelines h3 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.research-guidelines ul {
+  padding-left: 1.5rem;
+}
+
+.research-guidelines li {
+  margin-bottom: 0.8rem;
+}
+
+.genealogy-popup-form {
+  background: var(--white);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  padding: 2rem 2.5rem;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.genealogy-popup-form h3 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.genealogy-popup-form .form-group {
+  margin-bottom: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.genealogy-popup-form label {
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 0.4rem;
+}
+
+.genealogy-popup-form input,
+.genealogy-popup-form textarea {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: var(--light);
+  color: var(--dark);
+  margin-bottom: 0.2rem;
+}
+
+.genealogy-popup-form textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+.genealogy-popup-form .form-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  margin-top: 1.2rem;
+}
+
+.research-request-popup-form {
+  background: var(--white);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  padding: 2rem 2.5rem;
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.research-request-popup-form h3 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.research-request-popup-form .form-group {
+  margin-bottom: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.research-request-popup-form label {
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 0.4rem;
+}
+
+.research-request-popup-form input,
+.research-request-popup-form textarea {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: var(--light);
+  color: var(--dark);
+  margin-bottom: 0.2rem;
+}
+
+.research-request-popup-form textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+.research-request-popup-form .form-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  margin-top: 1.2rem;
+}
+
+@media (max-width: 992px) {
+  .archives-image-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .video-item {
+    grid-template-columns: 1fr;
+  }
+  
+  .video-container {
+    height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .research-hero {
+    height: 30vh;
+  }
+  
+  .research-hero h2 {
+    font-size: 1.8rem;
+  }
+  
+  .research-tabs {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .tab-btn {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .archive-category {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .archive-category i {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+  
+  .service-box {
+    padding: 1rem;
+  }
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.popup-form {
+  background: var(--white);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  padding: 2rem 2.5rem;
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+}

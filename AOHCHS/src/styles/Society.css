@@ -1,0 +1,158 @@
+.society-section {
+  padding-top: 6rem;
+}
+
+.society-tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--secondary);
+}
+
+.tab-btn {
+  background: none;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  color: var(--dark);
+  cursor: pointer;
+  transition: var(--transition);
+  position: relative;
+}
+
+.tab-btn.active {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.tab-btn.active::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: var(--primary);
+}
+
+.tab-content {
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.content-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content-text ul {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.content-text li {
+  margin-bottom: 0.5rem;
+}
+
+.content-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.card-img:hover {
+  transform: scale(1.03);
+}
+
+.collection-card {
+  height: 100%;
+}
+
+.collection-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.card-body h3 {
+  margin-bottom: 0.8rem;
+}
+
+.membership-card {
+  text-align: center;
+  transition: var(--transition);
+}
+
+.membership-card.featured {
+  transform: scale(1.05);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  border: 2px solid var(--primary);
+}
+
+.card-header {
+  background-color: var(--primary);
+  padding: 1.5rem;
+  color: var(--white);
+}
+
+.membership-card.featured .card-header {
+  background-color: var(--accent);
+}
+
+.card-header h3 {
+  color: #fff !important;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.membership-card ul {
+  list-style: none;
+  margin-bottom: 1.5rem;
+}
+
+.membership-card li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.membership-card li:last-child {
+  border-bottom: none;
+}
+
+@media (max-width: 768px) {
+  .society-tabs {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .tab-btn {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .content-image {
+    margin-top: 2rem;
+    order: -1;
+  }
+} 

@@ -1,0 +1,284 @@
+.giftshop-section {
+  padding-top: 6rem;
+}
+
+.giftshop-hero {
+  height: 40vh;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/giftshop-hero.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.giftshop-hero-content {
+  color: var(--white);
+  max-width: 800px;
+  padding: 2rem;
+}
+
+.giftshop-hero h2 {
+  color: var(--white);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.giftshop-hero p {
+  font-size: 1.2rem;
+}
+
+.giftshop-container {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.giftshop-sidebar {
+  background-color: var(--white);
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: var(--shadow);
+  height: fit-content;
+}
+
+.giftshop-sidebar h3 {
+  color: var(--primary);
+  margin-bottom: 1.2rem;
+}
+
+.category-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+.category-btn {
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 0.8rem 1rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.category-btn:hover {
+  background-color: var(--light);
+}
+
+.category-btn.active {
+  background-color: var(--primary);
+  color: var(--white);
+  font-weight: 600;
+}
+
+.order-info,
+.contact-info {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #eee;
+}
+
+.order-info p,
+.contact-info p {
+  margin-bottom: 1rem;
+}
+
+.order-info button {
+  margin-top: 0.5rem;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.product-card {
+  background-color: var(--white);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.product-info {
+  padding: 1.5rem;
+}
+
+.product-info h3 {
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.author {
+  font-style: italic;
+  margin-bottom: 1rem;
+  color: #666;
+}
+
+.description {
+  margin-bottom: 1rem;
+}
+
+.price {
+  font-weight: 700;
+  color: var(--primary);
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.membership-content h2 {
+  margin-bottom: 1rem;
+}
+
+.membership-content > p {
+  margin-bottom: 2rem;
+}
+
+.membership-levels {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.membership-card {
+  background-color: var(--white);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  text-align: center;
+}
+
+.membership-card.featured {
+  transform: scale(1.05);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  border: 2px solid var(--primary);
+}
+
+.card-header {
+  background-color: var(--primary);
+  padding: 1.5rem;
+  color: var(--white);
+}
+
+.membership-card.featured .card-header {
+  background-color: var(--accent);
+}
+
+.card-header .price {
+  color: var(--white);
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.membership-card ul {
+  list-style: none;
+  margin-bottom: 1.5rem;
+}
+
+.membership-card li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.membership-card li:last-child {
+  border-bottom: none;
+}
+
+.membership-info {
+  background-color: var(--light);
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.membership-info h3 {
+  margin-bottom: 1rem;
+}
+
+.membership-info p {
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 992px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .membership-levels {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .membership-card.featured {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .giftshop-hero {
+    height: 30vh;
+  }
+  
+  .giftshop-hero h2 {
+    font-size: 1.8rem;
+  }
+  
+  .giftshop-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .category-buttons {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .category-btn {
+    flex: 1 0 auto;
+    text-align: center;
+  }
+  
+  .membership-levels {
+    grid-template-columns: 1fr;
+  }
+  
+  .membership-card.featured {
+    grid-column: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+} 

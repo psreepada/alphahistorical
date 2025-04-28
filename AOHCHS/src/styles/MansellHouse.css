@@ -1,0 +1,245 @@
+.mansell-section {
+  padding-top: 6rem;
+}
+
+.mansell-hero {
+  height: 40vh;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/mansell-hero.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.mansell-hero-content {
+  color: var(--white);
+  max-width: 800px;
+  padding: 2rem;
+}
+
+.mansell-hero h2 {
+  color: var(--white);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.mansell-hero p {
+  font-size: 1.2rem;
+}
+
+.mansell-tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--secondary);
+}
+
+.mansell-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mansell-text {
+  padding: 1rem;
+}
+
+.rates-table {
+  margin: 1.5rem 0;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.rate-row {
+  display: flex;
+  border-bottom: 1px solid #eee;
+}
+
+.rate-row:last-child {
+  border-bottom: none;
+}
+
+.rate-item {
+  padding: 0.8rem;
+  flex: 1;
+  border-right: 1px solid #eee;
+  background-color: #f9f9f9;
+}
+
+.rate-price {
+  padding: 0.8rem;
+  flex: 1;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.note {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.facility-features {
+  margin-top: 1rem;
+  padding-left: 1.5rem;
+}
+
+.facility-features li {
+  margin-bottom: 0.5rem;
+}
+
+.facility-card {
+  height: 100%;
+}
+
+.facility-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.virtual-tour {
+  background-color: var(--light);
+  padding: 2rem;
+  border-radius: 8px;
+  margin-top: 2rem;
+}
+
+.faq-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+.faq-item:last-child {
+  border-bottom: none;
+}
+
+.faq-item h3 {
+  margin-bottom: 0.8rem;
+  color: var(--primary);
+}
+
+.inquiry-form-container {
+  padding: 1rem;
+}
+
+.inquiry-form {
+  margin-top: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.contact-card {
+  height: 100%;
+}
+
+.contact-detail {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.contact-detail i {
+  margin-right: 1rem;
+  color: var(--primary);
+  width: 20px;
+  text-align: center;
+}
+
+.contact-detail span {
+  display: block;
+}
+
+.hours {
+  font-size: 0.9rem;
+  margin-top: 0.3rem;
+  color: #666;
+}
+
+.map-container {
+  background-color: var(--light);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.map-placeholder {
+  background-color: #eee;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .mansell-hero {
+    height: 30vh;
+  }
+  
+  .mansell-hero h2 {
+    font-size: 1.8rem;
+  }
+  
+  .mansell-tabs {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .tab-btn {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+} 
